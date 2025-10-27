@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Garden.Api",
+    "\\Garden.Api\\Models",
+    "\\Garden.Api\\obj",
+    "\\Garden.Api\\Properties",
+    "\\smartgarden-ui",
+    "\\smartgarden-ui\\public",
+    "\\smartgarden-ui\\src",
+    "\\smartgarden-ui\\src\\components"
+  ],
+  "SelectedNode": "\\Garden.Api\\Models\\SensorReadings.cs",
+  "PreviewInSolutionExplorer": false
+}

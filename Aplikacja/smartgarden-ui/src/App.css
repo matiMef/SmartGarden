@@ -1,0 +1,102 @@
+﻿.App {
+    background-color: #131219; 
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(27, 27, 28);
+    height: 50px;
+    border-bottom: 0.5px solid rgba(240, 248, 255, 0.4);
+    z-index: 1000;
+}
+
+.header-text {
+    margin-top: 8px;
+    color: white;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0px 20px;
+}
+
+.quick-info-wrapper {
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: #131219;
+    font-family: Arial;
+    color: white;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+
+.quick-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    gap: 6px;
+}
+
+.quick-watering {
+    margin-left: auto; /* ✨ to przesuwa całość do prawej strony */
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+
+/* Kontener całego gauge */
+.gauge-container {
+    position: relative;
+    color: white;
+    width: 400px;
+    height: 350px;
+    border: 0.5px solid rgba(240, 248, 255, 0.4);
+    border-radius: 7px;
+    background-color: rgb(43, 44, 48);
+    overflow: hidden; /* zapobiega wychodzeniu elementów poza zaokrąglenie */
+    margin: auto;
+}
+
+    /* Nagłówek */
+    .gauge-container h5 {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        padding: 6px 12px;
+        font-weight: bold;
+        font-size: 1rem;
+        background-color: rgb(27, 27, 28); /* ciemniejsze tło dla kontrastu */
+        border-bottom: 0.5px solid rgba(240, 248, 255, 0.4); /* tylko dolna linia */
+        box-sizing: border-box;
+    }
+
+/* Wykres (Chart.js gauge) */
+.gauge {
+    background-color: rgb(43, 44, 48);
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 80px; /* dostosuj wysokość według wyglądu */
+}
+
+.gauges-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;  
+}
+
+.charts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
