@@ -7,8 +7,6 @@
 #include <Adafruit_VEML7700.h>
 #include <SPI.h>
 
-extern Adafruit_ST7789 tft;
-
 void tftPrint();
 void tftSoil();
 void tftHumTemp();
@@ -16,6 +14,6 @@ void tftLux();
 void tftWaterLevel();
 void tftProfile();
 void drawWiFiIcon(int x, int y, uint16_t color);
-void changeWifiIconColor();
+void confTft();
 
 #endif

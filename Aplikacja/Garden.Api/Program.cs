@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 var ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-builder.Services.AddControllers(); // <-- TO JEST KLUCZOWE!
+builder.Services.AddControllers(); 
 builder.Services.AddHttpClient();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -20,15 +20,15 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp", policy =>
     {
-        policy.WithOrigins("http://localhost:3000") // adres frontendu
+        policy.WithOrigins("http://localhost:3000") 
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
 
 });
 
-builder.Services.AddHostedService<DataGeneratorService>();
-builder.Services.AddHttpClient<DataGeneratorService>();
+builder.Services.AddHostedService<DataService>();
+builder.Services.AddHttpClient<DataService>();
 
 var app = builder.Build();
 

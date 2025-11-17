@@ -12,10 +12,9 @@ import { Doughnut } from 'react-chartjs-2';
 ChartJS.register(ArcElement, Tooltip);
 
 interface WaterLevelGaugeProps {
-    waterLevel: number; // wartoœæ, któr¹ dostajesz z API
+    waterLevel: number;
 }
 
-// Pomocnicze kolory
 const COLORS = ['rgb(231, 24, 49)', 'rgb(239, 198, 0)', 'rgb(140, 214, 16)'];
 
 function colorForValue(v: number) {
@@ -75,6 +74,7 @@ const WaterLevelGauge: React.FC<WaterLevelGaugeProps> = ({ waterLevel }) => {
         rotation: -90,
         circumference: 180,
         cutout: '70%',
+        devicePixelRatio: window.devicePixelRatio,
         animation: {
             animateRotate: false,
             animateScale: false,

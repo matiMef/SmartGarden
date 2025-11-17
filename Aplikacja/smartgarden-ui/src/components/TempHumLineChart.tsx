@@ -1,4 +1,3 @@
-// TempHumLineChart.tsx
 import React from "react";
 import {
     Chart as ChartJS,
@@ -12,10 +11,8 @@ import {
 } from "chart.js";
 import { Line } from "react-chartjs-2";
 
-// Rejestrujemy potrzebne modu³y Chart.js
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
-// Typ danych przekazywanych do komponentu
 interface TempHumLineChartProps {
     temperatureData: Array<number>;
     humidityData: Array<number>;
@@ -28,7 +25,7 @@ const TempHumLineChart: React.FC<TempHumLineChartProps> = ({
     humidityData,
     dates
 }) => {
-    const labels = dates; // przyk³adowe dni
+    const labels = dates; 
 
     const data = {
         labels,
@@ -52,6 +49,7 @@ const TempHumLineChart: React.FC<TempHumLineChartProps> = ({
 
     const options = {
         responsive: true,
+        devicePixelRatio: window.devicePixelRatio,
         interaction: {
             mode: "index" as const,
             intersect: false,
@@ -62,13 +60,13 @@ const TempHumLineChart: React.FC<TempHumLineChartProps> = ({
                 labels: {
                     color: "#F8F8F9",
                     size: 14,
-                    weight: "bold", 
+                    weight: "bold",
                 },
             },
         },
         legend: {
             labels: {
-                color: "#F8F8F9", // kolor etykiet legendy
+                color: "#F8F8F9", 
             },
         },
         scales: {
@@ -77,10 +75,10 @@ const TempHumLineChart: React.FC<TempHumLineChartProps> = ({
                 display: true,
                 position: "left",
                 grid: {
-                    color: "rgba(255,255,255,0.4)", // kolor linii siatki
+                    color: "rgba(255,255,255,0.4)", 
                 },
                 ticks: {
-                    color: "#F8F8F9", 
+                    color: "#F8F8F9",
                 },
             },
             y1: {
@@ -93,11 +91,11 @@ const TempHumLineChart: React.FC<TempHumLineChartProps> = ({
                 },
                 ticks: {
                     color: "#F8F8F9",
-                },  
+                },
             },
             x: {
                 grid: {
-                    color: "rgba(255,255,255,0.4)", // kolor linii siatki
+                    color: "rgba(255,255,255,0.4)", 
                 },
                 ticks: {
                     color: "#F8F8F9",

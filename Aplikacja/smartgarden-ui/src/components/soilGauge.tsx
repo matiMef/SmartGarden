@@ -12,10 +12,9 @@ import { Doughnut } from 'react-chartjs-2';
 ChartJS.register(ArcElement, Tooltip);
 
 interface SoilGaugeProps {
-    soil: number; // wartoœæ, któr¹ dostajesz z API
+    soil: number; 
 }
 
-// Pomocnicze kolory
 const COLORS = ['rgb(140, 214, 16)', 'rgb(239, 198, 0)', 'rgb(231, 24, 49)'];
 
 function colorForValue(v: number) {
@@ -74,6 +73,7 @@ const SoilGauge: React.FC<SoilGaugeProps> = ({ soil }) => {
         rotation: -90,
         circumference: 180,
         cutout: '70%',
+        devicePixelRatio: window.devicePixelRatio,
         animation: {
             animateRotate: false,
             animateScale: false,

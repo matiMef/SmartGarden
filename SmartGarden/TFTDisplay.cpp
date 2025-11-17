@@ -1,12 +1,13 @@
 #include "TFTDisplay.h"
 
 extern float distance;
-extern bool connected;
 extern int profile;
+extern Adafruit_ST7789 tft;
 extern Adafruit_AHTX0 aht;
 extern Adafruit_VEML7700 veml;
 extern int moistureProfilesAlgorithm[3][2];
-extern int sensorPin;
+extern String apIp;
+extern void checkConnection();
 
 int readSensor();
 
@@ -16,6 +17,7 @@ void tftPrint(){
   tftLux();
   tftWaterLevel();
   tftProfile(); 
+  checkConnection();
 }
 
 void tftSoil(){
@@ -121,18 +123,32 @@ void tftWaterLevel(){
 }
 
 void drawWiFiIcon(int x, int y, uint16_t color) {
-  // Ikona Wi-Fi z 3 falami
   tft.drawCircle(x, y, 3, color);
   tft.drawCircle(x, y, 6, color);
   tft.drawCircle(x, y, 9, color);
   tft.fillCircle(x, y, 2, color);
 }
 
-void changeWifiIconColor(){
-  if(connected == true){
-    drawWiFiIcon(310, 10, ST77XX_GREEN);
-  }
-  else{
-    drawWiFiIcon(310, 10, ST77XX_RED);
-  }
+void confTft(){
+  tft.fillRect(0, 0, 300, 24, ST77XX_BLACK);
+  tft.setCursor(0, 0);
+  tft.setTextSize(2); 
+  tft.setTextColor(ST77XX_BLUE, ST77XX_BLACK);
+  tft.print("WiFi Configuration");
+  tft.fillRect(0, 24, 320, 24, ST77XX_BLACK);
+  tft.setCursor(0, 24);
+  tft.print("IP Address: ");
+  Serial.println(apIp);
+  tft.print(apIp);
+  tft.fillRect(0, 60, 320, 24, ST77XX_BLACK);
+  tft.setCursor(0, 60);
+  tft.print("Connect to the described");
+  tft.fillRect(0, 84, 320, 24, ST77XX_BLACK);
+  tft.setCursor(0, 84);
+  tft.print("address to enter new WiFi");
+  tft.fillRect(0, 108, 320, 24, ST77XX_BLACK);
+  tft.setCursor(0, 108);
+  tft.print("login details.");
+  checkConnection();
 }
+

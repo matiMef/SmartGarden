@@ -22,7 +22,7 @@ namespace Garden.Api.Controllers
         {
             // Arduino IP address
             // Endpoint to get data from Arduino
-            string arduinoIp = "192.168.10.124";
+            string arduinoIp = "192.168.4.1";
             string url = $"http://{arduinoIp}/data";
 
             // Send GET request to Arduino
@@ -54,7 +54,7 @@ namespace Garden.Api.Controllers
         [HttpPost("sendCommand")]
         public async Task<IActionResult> SendCommandToArduino([FromBody] ArduinoPayload data)
         {
-            string arduinoIp = "192.168.10.124";
+            string arduinoIp = "192.168.4.1";
             string url = $"http://{arduinoIp}/command";
 
             try
@@ -73,6 +73,22 @@ namespace Garden.Api.Controllers
                 {
                     return StatusCode((int)response.StatusCode, "Error while sending command to Arduino");
                 }
+
+                // Check for specific response indicating low water level
+                string responseText = await response.Content.ReadAsStringAsync();
+                if (responseText.Contains("LOW_WATER_LEVEL", StringComparison.OrdinalIgnoreCase))
+                {
+                    return Ok("LOW_WATER_LEVEL");
+                }
+                if (responseText.Contains("WATERING_ACTIVE", StringComparison.OrdinalIgnoreCase))
+                {
+                    return Ok("WATERING_ACTIVE");
+                }
+                if (responseText.Contains("OK", StringComparison.OrdinalIgnoreCase))
+                {
+                    return Ok("WATERING_STARTED");
+                }
+
 
                 return Ok("Command sent successfully");
             }

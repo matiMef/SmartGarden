@@ -6,12 +6,12 @@ using System.Text.Json;
 
 namespace Garden.Api.Services
 {
-    public class DataGeneratorService : BackgroundService
+    public class DataService : BackgroundService
     {
         private readonly IServiceProvider _serviceProvider;
         private readonly HttpClient _httpClient;
 
-        public DataGeneratorService(IServiceProvider serviceProvider)
+        public DataService(IServiceProvider serviceProvider)
         {
             _serviceProvider = serviceProvider;
             _httpClient = new HttpClient();
@@ -19,7 +19,8 @@ namespace Garden.Api.Services
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            string arduinoIp = "192.168.10.124"; // IP Arduino
+            // Arduino connection details
+            string arduinoIp = "192.168.4.1"; 
             string url = $"http://{arduinoIp}/data";
 
             while (!stoppingToken.IsCancellationRequested)

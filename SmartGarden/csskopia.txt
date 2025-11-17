@@ -1,6 +1,5 @@
-﻿.App {
+.App {
     background-color: #131219;
-    min-height: 100vh;
 }
 
 .header {
@@ -15,9 +14,9 @@
 }
 
 .header-item2 {
-    margin-left: auto;
+    margin-left: auto; 
     color: #ff4d4d;
-    padding-right: 20px;
+    padding-right: 20px; 
 }
 
 .header-text {
@@ -28,33 +27,26 @@
     font-size: 24px;
     font-weight: bold;
     padding: 0px 20px;
-    white-space: nowrap;
-    font-size: 24px;
 }
 
 .margin {
     margin-top: 90px;
 }
 
-.main-content-wrapper {
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 .quick-info {
     text-align: left;
     gap: 6px;
-    padding-bottom: 15px;
+    padding-bottom: 15px 0;
     padding-left: 10px;
 }
 
 .quick-watering {
     border-top: 1px solid rgba(240, 248, 255, 0.4);
-    padding: 15px 10px;
+    padding: 15px 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-left: 10px;
 }
 
 .watering-item {
@@ -65,10 +57,10 @@
 }
 
 .containers-wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .summary-container {
@@ -76,12 +68,13 @@
     position: relative;
     font-family: Arial;
     color: white;
-    width: 100%;
-    height: 380px;
+    width: 400px;
+    height: 350px;
     border: 0.5px solid rgba(240, 248, 255, 0.4);
     border-radius: 7px;
     background-color: rgb(43, 44, 48);
     overflow: hidden;
+    margin: auto;
 }
 
     .summary-container h5 {
@@ -99,12 +92,13 @@
 .gauge-container {
     position: relative;
     color: white;
-    width: 100%;
-    height: 380px;
+    width: 400px;
+    height: 350px;
     border: 0.5px solid rgba(240, 248, 255, 0.4);
     border-radius: 7px;
     background-color: rgb(43, 44, 48);
     overflow: hidden;
+    margin: auto;
 }
 
     .gauge-container h5 {
@@ -129,56 +123,9 @@
 }
 
 .charts-container {
+    margin: auto;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    gap: 40px; 
-    margin-bottom: 40px;
-    max-width: 1320px;
-    margin-left: auto; 
-    margin-right: auto; 
-    flex-wrap: wrap; 
-}
-
-.chart-container {
-    flex: 1;
-    min-width: 300px; 
-    height: 400px;
-}
-
-@media (max-width: 1400px) {
-    .containers-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .containers-wrapper {
-        grid-template-columns: 1fr;
-    }
-
-    .charts-container {
-        flex-direction: column; 
-        align-items: stretch;
-    }
-
-    .chart-container {
-        max-width: 100%; 
-    }
-}
-
-.main-content-wrapper {
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-@media (max-width: 450px) {
-    .header-text {
-        font-size: 18px; 
-        padding: 0px 10px; 
-    }
-    .header {
-        min-width: 360px; 
-    }
+    align-items: center;
+    gap: 80px;
 }

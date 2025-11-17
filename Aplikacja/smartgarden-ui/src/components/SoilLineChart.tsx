@@ -11,21 +11,18 @@ import {
 } from "chart.js";
 import { Line } from "react-chartjs-2";
 
-// Rejestrujemy potrzebne moduły Chart.js
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
- //Typ danych przekazywanych do komponentu
 interface SoilLineChartProps {
     soilData: Array<number>;
     soilDates: Array<string>;
 }
 
-// Nasz komponent
 const SoilLineChart: React.FC<SoilLineChartProps> = ({
     soilData,
     soilDates
 }) => {
-    const labels = soilDates; // przykładowe dni
+    const labels = soilDates;
 
     const data = {
         labels,
@@ -43,6 +40,7 @@ const SoilLineChart: React.FC<SoilLineChartProps> = ({
 
     const options = {
         responsive: true,
+        devicePixelRatio: window.devicePixelRatio,
         interaction: {
             mode: "index" as const,
             intersect: false,
@@ -51,9 +49,9 @@ const SoilLineChart: React.FC<SoilLineChartProps> = ({
         plugins: {
             legend: {
                 labels: {
-                    color: "#F8F8F9", 
-                        size: 14,
-                        weight: "bold",
+                    color: "#F8F8F9",
+                    size: 14,
+                    weight: "bold",
                 },
             },
         },
@@ -62,8 +60,8 @@ const SoilLineChart: React.FC<SoilLineChartProps> = ({
                 type: "linear" as const,
                 display: true,
                 position: "left",
-                min: 0,      // stały dolny zakres
-                max: 100,    // stały górny zakres
+                min: 0,
+                max: 100,
                 grid: {
                     color: "rgba(255, 255, 255, 0.4)",
                 },

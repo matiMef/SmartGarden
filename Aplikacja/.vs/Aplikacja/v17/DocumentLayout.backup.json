@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\components\\soilGauge.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:smartgarden-ui\\src\\components\\soilGauge.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\components\\HumGauge.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:smartgarden-ui\\src\\components\\HumGauge.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bucyk\\Desktop\\Aplikacja\\Garden.Api\\QueryController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Garden.Api\\QueryController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\components\\WaterGauge.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:smartgarden-ui\\src\\components\\WaterGauge.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\App.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:smartgarden-ui\\src\\App.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\components\\TempHumLineChart.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:smartgarden-ui\\src\\components\\TempHumLineChart.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\components\\SoilGauge.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:smartgarden-ui\\src\\components\\SoilGauge.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\components\\SoilLineChart.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:smartgarden-ui\\src\\components\\SoilLineChart.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\App.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:smartgarden-ui\\src\\App.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +38,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TempHumLineChart.tsx",
+              "DocumentMoniker": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\components\\TempHumLineChart.tsx",
+              "RelativeDocumentMoniker": "smartgarden-ui\\src\\components\\TempHumLineChart.tsx",
+              "ToolTip": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\components\\TempHumLineChart.tsx",
+              "RelativeToolTip": "smartgarden-ui\\src\\components\\TempHumLineChart.tsx",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAIwDMAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-11-17T02:02:19.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WaterGauge.tsx",
+              "DocumentMoniker": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\components\\WaterGauge.tsx",
+              "RelativeDocumentMoniker": "smartgarden-ui\\src\\components\\WaterGauge.tsx",
+              "ToolTip": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\components\\WaterGauge.tsx",
+              "RelativeToolTip": "smartgarden-ui\\src\\components\\WaterGauge.tsx",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwCYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-11-17T02:02:14.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SoilLineChart.tsx",
+              "DocumentMoniker": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\components\\SoilLineChart.tsx",
+              "RelativeDocumentMoniker": "smartgarden-ui\\src\\components\\SoilLineChart.tsx",
+              "ToolTip": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\components\\SoilLineChart.tsx",
+              "RelativeToolTip": "smartgarden-ui\\src\\components\\SoilLineChart.tsx",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwCYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-11-17T02:01:52.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SoilGauge.tsx",
+              "DocumentMoniker": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\components\\SoilGauge.tsx",
+              "RelativeDocumentMoniker": "smartgarden-ui\\src\\components\\SoilGauge.tsx",
+              "ToolTip": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\components\\SoilGauge.tsx",
+              "RelativeToolTip": "smartgarden-ui\\src\\components\\SoilGauge.tsx",
+              "ViewState": "AgIAADYAAAAAAAAAAAArwEwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-11-17T02:01:44.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HumGauge.tsx",
+              "DocumentMoniker": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\components\\HumGauge.tsx",
+              "RelativeDocumentMoniker": "smartgarden-ui\\src\\components\\HumGauge.tsx",
+              "ToolTip": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\components\\HumGauge.tsx",
+              "RelativeToolTip": "smartgarden-ui\\src\\components\\HumGauge.tsx",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-11-17T02:00:00.509Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -32,36 +113,22 @@
               "RelativeDocumentMoniker": "smartgarden-ui\\src\\App.tsx",
               "ToolTip": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\App.tsx",
               "RelativeToolTip": "smartgarden-ui\\src\\App.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAALoAAAAAAAAAAAArwM0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-10-20T20:23:38.312Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-11-15T17:50:14.741Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "QueryController.cs",
-              "DocumentMoniker": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\Garden.Api\\QueryController.cs",
-              "RelativeDocumentMoniker": "Garden.Api\\QueryController.cs",
-              "ToolTip": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\Garden.Api\\QueryController.cs",
-              "RelativeToolTip": "Garden.Api\\QueryController.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAAAHUAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T16:22:40.279Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "soilGauge.tsx",
-              "DocumentMoniker": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\components\\soilGauge.tsx",
-              "RelativeDocumentMoniker": "smartgarden-ui\\src\\components\\soilGauge.tsx",
-              "ToolTip": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\components\\soilGauge.tsx",
-              "RelativeToolTip": "smartgarden-ui\\src\\components\\soilGauge.tsx",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-10-24T19:12:30.484Z",
+              "DocumentIndex": 6,
+              "Title": "App.css",
+              "DocumentMoniker": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\App.css",
+              "RelativeDocumentMoniker": "smartgarden-ui\\src\\App.css",
+              "ToolTip": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\App.css",
+              "RelativeToolTip": "smartgarden-ui\\src\\App.css",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAWwL4AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-15T17:50:10.697Z",
               "EditorCaption": ""
             }
           ]
