@@ -1,9 +1,8 @@
 #include "WifiServer.h"
 #include <EEPROM.h>
+#include "Sensors.h"
 
 extern WiFiServer server;
-extern Adafruit_AHTX0 aht;
-extern Adafruit_VEML7700 veml;
 extern bool hold;
 extern bool wateringActive;
 extern bool lowWaterLevel;
@@ -12,6 +11,7 @@ extern bool configuration;
 
 extern const char* apSsid;
 extern const char* apPassword;
+extern SensorData globalSensors; 
 
 char tempApSsid[] = "Arduino";
 char tempApPassword[] = "SmartGarden";
@@ -34,21 +34,13 @@ void sendData(){
       String req = client.readStringUntil('\r');
       client.flush();
 
-        sensors_event_t humidityEvent, tempEvent;
-        aht.getEvent(&humidityEvent, &tempEvent);
-        float temp = tempEvent.temperature;
-        float humidity = humidityEvent.relative_humidity;
-        float lux = veml.readLux();
-        int soil = readSensor();
-        float distance = readDistance();
-
       if (req.indexOf("GET /data") != -1) {
         String json = "{";
-        json += "\"temperature\":" + String(temp, 2) + ",";
-        json += "\"humidity\":" + String(humidity, 2) + ",";
-        json += "\"soil\":" + String(soil) + ",";
-        json += "\"lux\":" + String(lux) + ",";
-        json += "\"distance\":" + String(distance) + ",";
+        json += "\"temperature\":" + String(globalSensors.temperature, 2) + ",";
+        json += "\"humidity\":" + String(globalSensors.airHumidity, 2) + ",";
+        json += "\"soil\":" + String(globalSensors.soilHumidity) + ",";
+        json += "\"lux\":" + String(globalSensors.lux) + ",";
+        json += "\"distance\":" + String(globalSensors.waterDistance) + ",";
         json += "\"profile\":" + String(profile);
         json += "}";
 
@@ -89,14 +81,15 @@ void sendData(){
                 client.println("OK");
             }
             else if(lowWaterLevel){
-              client.println("HTTP/1.1 200 OK");
+              //został zmieniony kod http sprawdzic działanie!!!
+              client.println("HTTP/1.1 403 OK");
               client.println("Content-Type: text/plain");
               client.println("Connection: close");
               client.println();
               client.println("LOW_WATER_LEVEL");
             }
             else{
-              client.println("HTTP/1.1 200 OK");
+              client.println("HTTP/1.1 403 OK");
               client.println("Content-Type: text/plain");
               client.println("Connection: close");
               client.println();

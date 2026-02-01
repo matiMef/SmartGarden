@@ -65,7 +65,7 @@ namespace Garden.Api.Services
                     Console.WriteLine($"Error while connecting to Arduino: {ex.Message}");
                 }
 
-                await Task.Delay(TimeSpan.FromMinutes(10), stoppingToken);
+                await Task.Delay(TimeSpan.FromMinutes(15), stoppingToken);
             }
         }   
     }

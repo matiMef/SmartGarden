@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\components\\SoilGauge.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:smartgarden-ui\\src\\components\\SoilGauge.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bucyk\\Desktop\\Aplikacja\\Garden.Api\\DataService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Garden.Api\\DataService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bucyk\\Desktop\\Aplikacja\\Garden.Api\\ArduinoController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Garden.Api\\ArduinoController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bucyk\\Desktop\\Aplikacja\\Garden.Api\\QueryController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Garden.Api\\QueryController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bucyk\\Desktop\\Aplikacja\\Garden.Api\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Garden.Api\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\App.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:smartgarden-ui\\src\\App.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +30,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SoilGauge.tsx",
-              "DocumentMoniker": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\components\\SoilGauge.tsx",
-              "RelativeDocumentMoniker": "smartgarden-ui\\src\\components\\SoilGauge.tsx",
-              "ToolTip": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\components\\SoilGauge.tsx",
-              "RelativeToolTip": "smartgarden-ui\\src\\components\\SoilGauge.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAUAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\Garden.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Garden.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\Garden.Api\\Program.cs",
+              "RelativeToolTip": "Garden.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T21:41:59.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QueryController.cs",
+              "DocumentMoniker": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\Garden.Api\\QueryController.cs",
+              "RelativeDocumentMoniker": "Garden.Api\\QueryController.cs",
+              "ToolTip": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\Garden.Api\\QueryController.cs",
+              "RelativeToolTip": "Garden.Api\\QueryController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAcBAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T20:00:03.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.tsx",
+              "DocumentMoniker": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\App.tsx",
+              "RelativeDocumentMoniker": "smartgarden-ui\\src\\App.tsx",
+              "ToolTip": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\smartgarden-ui\\src\\App.tsx",
+              "RelativeToolTip": "smartgarden-ui\\src\\App.tsx",
+              "ViewState": "AgIAACQBAAAAAAAAAAAEwDsBAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-11-17T02:01:44.246Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-11-21T03:22:40.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ArduinoController.cs",
+              "DocumentMoniker": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\Garden.Api\\ArduinoController.cs",
+              "RelativeDocumentMoniker": "Garden.Api\\ArduinoController.cs",
+              "ToolTip": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\Garden.Api\\ArduinoController.cs",
+              "RelativeToolTip": "Garden.Api\\ArduinoController.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFYAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T03:22:36.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataService.cs",
+              "DocumentMoniker": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\Garden.Api\\DataService.cs",
+              "RelativeDocumentMoniker": "Garden.Api\\DataService.cs",
+              "ToolTip": "C:\\Users\\Bucyk\\Desktop\\Aplikacja\\Garden.Api\\DataService.cs",
+              "RelativeToolTip": "Garden.Api\\DataService.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAD4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T03:21:36.81Z",
               "EditorCaption": ""
             }
           ]

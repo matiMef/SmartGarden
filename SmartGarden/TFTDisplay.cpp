@@ -1,4 +1,5 @@
 #include "TFTDisplay.h"
+#include "Sensors.h"
 
 extern float distance;
 extern int profile;
@@ -7,8 +8,9 @@ extern Adafruit_AHTX0 aht;
 extern Adafruit_VEML7700 veml;
 extern int moistureProfilesAlgorithm[3][2];
 extern String apIp;
-extern void checkConnection();
+extern SensorData globalSensors; 
 
+void checkConnection();
 int readSensor();
 
 void tftPrint(){
@@ -21,7 +23,7 @@ void tftPrint(){
 }
 
 void tftSoil(){
-  float soil_humidity = readSensor();
+  float soil_humidity = globalSensors.soilHumidity;
   // tft display of soil sensor
   tft.fillRect(0, 0, 300, 24, ST77XX_BLACK);
   tft.setCursor(0, 0);
@@ -45,7 +47,7 @@ void tftSoil(){
 
 void tftLux(){
   // ambient light sensor
-  float lux = veml.readLux();
+  float lux = globalSensors.lux;
   
    // tft display lux
   tft.fillRect(0, 120, 320, 24, ST77XX_BLACK);
@@ -65,21 +67,17 @@ void tftLux(){
 }
 
 void tftHumTemp(){
-  // temp and humidity sensor 
-  sensors_event_t humidity, temp;
-  aht.getEvent(&humidity, &temp);
-
    // tft display humidity
   tft.fillRect(0, 40, 320, 24, ST77XX_BLACK);  // osobny prostok�t, �eby nadpisa� stare dane
   tft.setCursor(0, 40);
   tft.print("Air H: ");
-  tft.print(humidity.relative_humidity);
+  tft.print(globalSensors.airHumidity);
 
   // tft display temperature
   tft.fillRect(0, 80, 320, 24, ST77XX_BLACK);
   tft.setCursor(0, 80);
   tft.print("Temp: ");
-  tft.print(temp.temperature);
+  tft.print(globalSensors.temperature);
 }
 
 void tftProfile(){
@@ -107,11 +105,11 @@ void tftWaterLevel(){
   tft.fillRect(0, 160, 320, 24, ST77XX_BLACK);
   tft.setCursor(0, 160);
   tft.print("Water Level: ");
-  if ( distance > 10){
+  if ( globalSensors.waterDistance > 10){
     tft.setTextColor(ST77XX_RED, ST77XX_BLACK);
     tft.print("Low");
   }
-  else if ( distance < 10 and distance > 5){
+  else if ( globalSensors.waterDistance < 10 and globalSensors.waterDistance > 5){
     tft.setTextColor(ST77XX_YELLOW, ST77XX_BLACK);
     tft.print("Mid");
   }
